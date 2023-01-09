@@ -1,0 +1,57 @@
+----------------------------------------------Basics of Navigation-----------------------------------------------------------------------------------------
+
+
+ls             -->>Whereever you are you will see the contents printed out(written)
+ls -a          -->>Whereever you are you will see the hidden files in that directory
+start.         -->>Whereever you are you will see the contents printed out. you will see all the files and folders like you see in file explorer
+ls pictures/   -->>You will see what are contants inside pictures folder
+clear          -->>Clearing all the stuffs on your terminal
+ls pictures/img008-->>you can open a file (ex: img008 here) inside any folder
+pwd            --> it prints out the path/directory to where you are
+cd downloads            -->>change directory. if you want to move from one folder to other
+cd ..          -->to move one folder back from the folder in which you are currently
+
+
+
+-----------------------------------------------File/Folder creation-----------------------------------------------------------------------------------------
+
+
+
+touch  vinit.txt        -->> new file will be created with the name vinit in the directory where you are currently(you can create multiple files, multiple
+                        type of files like .js, .pdf, .xml) All the created files will be empty
+touch documents/vinit.txt -->> new file will be created in the folder you want(here new file will be created inside document folder)
+
+mkdir Pet               -->> new folder(here Pet) will be created in the current directory
+
+mkdir Animal Birds      --->> you can also create multiple folders in the current directory in one(Here Animal and Birds folder will be created)
+
+
+
+------------------------------------------------File/Folder deletion----------------------------------------------------------------------------------------
+
+
+
+rm vinit.txt           -->>deleting(permanently) any file in current directory
+
+rm -rf Pet             -->>deleting(permanently) any folder from current directory
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

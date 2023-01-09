@@ -1,0 +1,42 @@
+git branch  -->>used to view the existing branches. Default branch in every git repo is master.
+
+----------------------------------------------------Creating and switching Branches-------------------------------------------------------------------------
+
+
+git branch <branch-name> -->>creating a new branch with branch name. But at this stage pointer(header)will point to the master branch
+
+git switch <branch-name> -->>now the pointer will point to the specified branch. So if you commit anything now it will reflect in new branch. Otherwise any commit would have been reflected in master branch
+
+git switch -c <branch-name> -->>instead of adding a new branch and then switching to it we can dierectly use this command to create new branch and switching to this new branch at one go
+
+
+
+----------------------------------------------------Deleting and Renaming branches------------------------------------------------------------------------
+
+
+git branch -d <branch name>  -->> used to delete the branch but note one thing that you can't delete a branch in which you are currently. First switch yorself to other branch then delete the branch. You also can't delete a branch is not fulyy merged.
+
+git branch -D <branch name> -->> deletes the branch irrespective of whether it is merged or not.
+
+to rename a branch you have to go inside that branch for which you want to change the name(in case of delete it was exact opposite, in that case you need to go out of the branch which you want to delete)
+
+git branch -m <new name that you want>  -->> command to rename the git branch(make sure you are inside that branch)
+
+
+
+-------------------------------------------------------(few concepts)--------------------------------------------------------------------------------------
+
+
+what is Head?
+>Head is simply a pointer that refers to the "current location" in your repository. It points to a particular branch refrence.
+
+Head points to the branch and branch points to the latest commit inside it
+
+
+
+-------------------------------------------------------------MERGING BRANCHES-------------------------------------------------------------------------------
+
+
+
+
+

@@ -1,0 +1,66 @@
+---------------------------------------------------Intialising Git Repo-------------------------------------------------------------------------------------
+
+
+git status -->>gives information on the current status of a git repository and its contents
+
+git init -->> initialise a new git repository inside the directory you are currently
+
+git init is like one time command for a project because you are not going to create repo again again in a single project.
+
+Once you initialise a git repo, a hidden file(.git) is created which can't be seen normally just by giving ls command, you need to give ls -a to see that hidden file that got created. If you delete this all the git history will go away, that is the only reason why it has been made hidden.
+
+Once you create a git repo in any folder, it will track all the folders inside it and it will even track folder inside folder and so on.. You can always check it my running git status command inside any folder which is inside that folder for which we initialized the git repo. This feature helps us not to create another repo inside of any existing repo. So,
+
+Before running git init command make sure to run git status command in order to check whether you are inside any git repo or not
+
+
+--------------------------------------------------Committing----------------------------------------------------------------------------------------------
+
+
+git commit is analogous to checkpoint. Whenever we do some required progress in a project we make a checkpoint so that if in guture we go ahead and add few more things in our project and it is not working fine we can always revert back to the initial checkpoint. In git we say it as commit. Replace checkpoint with commit in above sentence.
+
+Commit can be done after change/progress in one file or a group of file
+Commit is not just like hitting save button. It is multi step process
+
+git add file1 file 2 etc.-->> this command is used to stage the changes to be commited. It is like telling git that,"please include these changes in next commit"
+
+flow:  Work on stuff --> add changes (grouping all the changes(staging) that needs to included in a commit as you might work on multiple files and you want to add those files in a single commit) --> commit
+
+git commit -->>this command actually helps to commit changes from the staging area.It also opens up a text editor and prompts you for commit message or either use the below command
+
+git commit -m "message you want"
+
+git log -->>logs of all the commits in this project like who did it ,at what time stuffs like that
+
+git add . -->>stage all changes(all the files you worked or modidied) at once
+
+When making a commit, we need to provide a commit message that summarizes the changes and work snapshotted in the commit
+
+
+git log --oneline -->>this command give details of all the commits in one line. This helps when there are thousands of commit in total and each commit message is of more than 3 to 4 lines. 
+
+
+----------------------------------------------------------Ammending commits------------------------------------------------------------------------------
+This is only valid for most recent(just one coomit ago) commit
+
+
+git commit --ammend -->> this command will help you to change the commit message or if you forgot to include any file in you commit(Make sure to configure vs code otherwise this command will open VIM editor which is quite confusing)
+
+----------------------------------------------------------IGNORING FILES------------------------------------------------------------------------------
+
+There are certain files in the project that you don't want at all to be tracked, you don't want to include in commits
+.gitignore
+
+
+
+
+
+
+
+
+
+
+
+
+
+
